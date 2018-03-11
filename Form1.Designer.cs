@@ -176,15 +176,16 @@
             // 
             // Output
             // 
-            this.Output.AutoSize = true;
             this.Output.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Output.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Output.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Output.Location = new System.Drawing.Point(527, 126);
+            this.Output.Location = new System.Drawing.Point(129, 126);
             this.Output.Name = "Output";
-            this.Output.Size = new System.Drawing.Size(18, 20);
+            this.Output.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Output.Size = new System.Drawing.Size(416, 20);
             this.Output.TabIndex = 12;
             this.Output.Text = "0";
+            this.Output.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Zero
             // 
@@ -256,7 +257,6 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
