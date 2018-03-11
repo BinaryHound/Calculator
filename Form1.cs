@@ -21,7 +21,7 @@ namespace CalculatorAttempt {
         //to stop infinitely adding logical operators could we simply see if the length of the operands stack has changed since the last addition?
 
     public partial class Form1 : Form {
-        //Some new stuff here.
+       
         //Operators: The logical manipulations of data such as: +, -, *, /.
         public Stack<char> operatorsStack;
 
