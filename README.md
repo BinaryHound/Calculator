@@ -19,12 +19,12 @@ Upcoming Changes 0.0.3:
  - Look for new functions like sqrt(), log(), sin(), tan(), and cos().
  - and many more!
  
- ![calc-home](https://user-images.githubusercontent.com/20911133/37311317-68cd38b6-260c-11e8-946c-cfaf60f65f9e.PNG)
+![1](https://user-images.githubusercontent.com/20911133/37312162-9489383a-260f-11e8-8929-4279a1a5f34f.PNG)
  
- 
-![calc-input](https://user-images.githubusercontent.com/20911133/37311364-91ff7078-260c-11e8-90c4-da9aa4043bbf.PNG)
+![2](https://user-images.githubusercontent.com/20911133/37312194-ae200fee-260f-11e8-8501-fe5ba3955ca1.PNG)
 
-![calc-equals](https://user-images.githubusercontent.com/20911133/37311374-999f25b2-260c-11e8-8e6b-aed017ce2fbf.PNG)
+![3](https://user-images.githubusercontent.com/20911133/37312205-b5c891bc-260f-11e8-8faa-12fbafac0be7.PNG)
+
  
 <br>
 Errors:
