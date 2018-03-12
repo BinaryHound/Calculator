@@ -25,11 +25,4 @@ Upcoming Changes 0.0.3:
 
 ![3](https://user-images.githubusercontent.com/20911133/37312205-b5c891bc-260f-11e8-8faa-12fbafac0be7.PNG)
 
- 
-<br>
-Errors:
-Logic: Multi-valued inputs are being seen as a single input value. Instead of 12 being a single value it is currently 1, 2. (urgent)
-<br>
-(FIXED){
-  Visual: Output label is currently expanding in the wrong direction, and shouldn't be expanding all together. (not urgent)
-}
+ Thank you!
