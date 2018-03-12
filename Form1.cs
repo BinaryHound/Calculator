@@ -252,6 +252,7 @@ namespace CalculatorAttempt {
         {
             operandsStack.Clear();
             operatorsStack.Clear();
+            numContainer.Clear();
             Output.Text = "0";
             sb.Clear();
         }
