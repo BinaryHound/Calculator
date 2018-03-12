@@ -11,8 +11,6 @@ using System.Windows.Forms;
 namespace CalculatorAttempt {
     //ALL METHODS ARE PUBLIC FOR UNIT TESTING CURRENTLY!
 
-        //to stop infinitely adding logical operators could we simply see if the length of the operands stack has changed since the last addition?
-
     public partial class Form1 : Form {
        
         //Operators: The logical manipulations of data such as: +, -, *, /.
@@ -250,10 +248,19 @@ namespace CalculatorAttempt {
             }
         }
 
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            operandsStack.Clear();
+            operatorsStack.Clear();
+            Output.Text = "";
+            sb.Clear();
+        }
+
         public void Equals_Click(object sender, EventArgs e)
         {
             numDequeuer();
             EvaluateExpression(operandsStack, operatorsStack);
         }
+
     }
 }

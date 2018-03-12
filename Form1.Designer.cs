@@ -40,6 +40,7 @@
             this.Decimal = new System.Windows.Forms.Button();
             this.Multiply = new System.Windows.Forms.Button();
             this.Division = new System.Windows.Forms.Button();
+            this.Clear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // One
@@ -231,12 +232,24 @@
             this.Division.UseVisualStyleBackColor = true;
             this.Division.Click += new System.EventHandler(this.Division_Click);
             // 
+            // Clear
+            // 
+            this.Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clear.Location = new System.Drawing.Point(129, 285);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(75, 50);
+            this.Clear.TabIndex = 17;
+            this.Clear.Text = "C";
+            this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.Clear);
             this.Controls.Add(this.Division);
             this.Controls.Add(this.Multiply);
             this.Controls.Add(this.Decimal);
@@ -279,6 +292,7 @@
         private System.Windows.Forms.Button Decimal;
         private System.Windows.Forms.Button Multiply;
         private System.Windows.Forms.Button Division;
+        private System.Windows.Forms.Button Clear;
     }
 }
 
