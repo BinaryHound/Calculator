@@ -297,5 +297,10 @@ namespace CalculatorAttempt {
             panelLeft.Height = buttonNotepad.Height;
             panelLeft.Top = buttonNotepad.Top;
         }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

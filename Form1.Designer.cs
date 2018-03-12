@@ -51,6 +51,7 @@
             this.buttonHome = new System.Windows.Forms.Button();
             this.panelTop = new System.Windows.Forms.Panel();
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.panelControl.SuspendLayout();
             this.panelTop.SuspendLayout();
             this.SuspendLayout();
@@ -276,11 +277,11 @@
             this.Output.BackColor = System.Drawing.Color.White;
             this.Output.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Output.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Output.Location = new System.Drawing.Point(16, 0);
+            this.Output.Location = new System.Drawing.Point(14, 38);
             this.Output.Name = "Output";
             this.Output.Padding = new System.Windows.Forms.Padding(0, 0, 25, 0);
             this.Output.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Output.Size = new System.Drawing.Size(424, 166);
+            this.Output.Size = new System.Drawing.Size(430, 128);
             this.Output.TabIndex = 12;
             this.Output.Text = "0";
             this.Output.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -377,6 +378,7 @@
             // 
             // panelControl
             // 
+            this.panelControl.Controls.Add(this.panelLeft);
             this.panelControl.Controls.Add(this.panel3);
             this.panelControl.Controls.Add(this.buttonNotepad);
             this.panelControl.Controls.Add(this.buttonToDo);
@@ -407,7 +409,7 @@
             this.buttonNotepad.Name = "buttonNotepad";
             this.buttonNotepad.Size = new System.Drawing.Size(200, 80);
             this.buttonNotepad.TabIndex = 4;
-            this.buttonNotepad.Text = "Notepad?";
+            this.buttonNotepad.Text = "Notepad";
             this.buttonNotepad.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonNotepad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonNotepad.UseVisualStyleBackColor = true;
@@ -483,27 +485,45 @@
             // 
             // panelTop
             // 
+            this.panelTop.Controls.Add(this.buttonExit);
             this.panelTop.Controls.Add(this.Output);
-            this.panelTop.Location = new System.Drawing.Point(206, 0);
+            this.panelTop.Location = new System.Drawing.Point(200, 0);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(440, 166);
+            this.panelTop.Size = new System.Drawing.Size(444, 166);
             this.panelTop.TabIndex = 19;
             this.panelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.LightCoral;
-            this.panelLeft.Location = new System.Drawing.Point(200, 0);
+            this.panelLeft.Location = new System.Drawing.Point(195, 0);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(5, 80);
+            this.panelLeft.Size = new System.Drawing.Size(3, 80);
             this.panelLeft.TabIndex = 13;
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.BackColor = System.Drawing.Color.Red;
+            this.buttonExit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonExit.FlatAppearance.BorderSize = 0;
+            this.buttonExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.buttonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonExit.Location = new System.Drawing.Point(414, 0);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(30, 30);
+            this.buttonExit.TabIndex = 13;
+            this.buttonExit.Text = "X";
+            this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(645, 461);
-            this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.panelControl);
             this.Controls.Add(this.Clear);
@@ -525,6 +545,7 @@
             this.Controls.Add(this.One);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panelControl.ResumeLayout(false);
             this.panelTop.ResumeLayout(false);
@@ -561,6 +582,7 @@
         private System.Windows.Forms.Button buttonToDo;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panelLeft;
+        private System.Windows.Forms.Button buttonExit;
     }
 }
 
