@@ -14,6 +14,8 @@ UPDATE 0.0.2:
  
 Upcoming Changes 0.0.3:
  - Look for single delegate to clean up some of the programs clutter.
+ - More functionality for college students (Notepad, Calculator, To do list, Calendar) all in one place.
+ - Optimizations once code is a bit further along.
  - Look for new functions like sqrt(), log(), sin(), tan(), and cos().
  - and many more!
  
