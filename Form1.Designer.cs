@@ -41,12 +41,22 @@
             this.Multiply = new System.Windows.Forms.Button();
             this.Division = new System.Windows.Forms.Button();
             this.Clear = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // One
             // 
-            this.One.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.One.Location = new System.Drawing.Point(210, 285);
+            this.One.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.One.FlatAppearance.BorderSize = 0;
+            this.One.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.One.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.One.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.One.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.One.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.One.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.One.Location = new System.Drawing.Point(292, 285);
             this.One.Name = "One";
             this.One.Size = new System.Drawing.Size(75, 50);
             this.One.TabIndex = 0;
@@ -56,8 +66,15 @@
             // 
             // Two
             // 
-            this.Two.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Two.Location = new System.Drawing.Point(291, 285);
+            this.Two.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Two.FlatAppearance.BorderSize = 0;
+            this.Two.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Two.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Two.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Two.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Two.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Two.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Two.Location = new System.Drawing.Point(373, 285);
             this.Two.Name = "Two";
             this.Two.Size = new System.Drawing.Size(75, 50);
             this.Two.TabIndex = 1;
@@ -67,8 +84,15 @@
             // 
             // Three
             // 
-            this.Three.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Three.Location = new System.Drawing.Point(372, 285);
+            this.Three.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Three.FlatAppearance.BorderSize = 0;
+            this.Three.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Three.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Three.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Three.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Three.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Three.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Three.Location = new System.Drawing.Point(454, 285);
             this.Three.Name = "Three";
             this.Three.Size = new System.Drawing.Size(75, 50);
             this.Three.TabIndex = 2;
@@ -78,8 +102,15 @@
             // 
             // Four
             // 
-            this.Four.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Four.Location = new System.Drawing.Point(210, 229);
+            this.Four.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Four.FlatAppearance.BorderSize = 0;
+            this.Four.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Four.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Four.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Four.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Four.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Four.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Four.Location = new System.Drawing.Point(292, 229);
             this.Four.Name = "Four";
             this.Four.Size = new System.Drawing.Size(75, 50);
             this.Four.TabIndex = 3;
@@ -89,8 +120,15 @@
             // 
             // Five
             // 
-            this.Five.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Five.Location = new System.Drawing.Point(291, 229);
+            this.Five.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Five.FlatAppearance.BorderSize = 0;
+            this.Five.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Five.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Five.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Five.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Five.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Five.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Five.Location = new System.Drawing.Point(373, 229);
             this.Five.Name = "Five";
             this.Five.Size = new System.Drawing.Size(75, 50);
             this.Five.TabIndex = 4;
@@ -100,8 +138,15 @@
             // 
             // Six
             // 
-            this.Six.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Six.Location = new System.Drawing.Point(372, 229);
+            this.Six.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Six.FlatAppearance.BorderSize = 0;
+            this.Six.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Six.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Six.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Six.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Six.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Six.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Six.Location = new System.Drawing.Point(454, 229);
             this.Six.Name = "Six";
             this.Six.Size = new System.Drawing.Size(75, 50);
             this.Six.TabIndex = 5;
@@ -111,8 +156,15 @@
             // 
             // Seven
             // 
-            this.Seven.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Seven.Location = new System.Drawing.Point(210, 173);
+            this.Seven.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Seven.FlatAppearance.BorderSize = 0;
+            this.Seven.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Seven.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Seven.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Seven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Seven.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Seven.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Seven.Location = new System.Drawing.Point(292, 173);
             this.Seven.Name = "Seven";
             this.Seven.Size = new System.Drawing.Size(75, 50);
             this.Seven.TabIndex = 6;
@@ -122,8 +174,15 @@
             // 
             // Eight
             // 
-            this.Eight.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Eight.Location = new System.Drawing.Point(291, 173);
+            this.Eight.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Eight.FlatAppearance.BorderSize = 0;
+            this.Eight.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Eight.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Eight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Eight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Eight.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Eight.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Eight.Location = new System.Drawing.Point(373, 173);
             this.Eight.Name = "Eight";
             this.Eight.Size = new System.Drawing.Size(75, 50);
             this.Eight.TabIndex = 7;
@@ -133,8 +192,15 @@
             // 
             // Nine
             // 
-            this.Nine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nine.Location = new System.Drawing.Point(372, 173);
+            this.Nine.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Nine.FlatAppearance.BorderSize = 0;
+            this.Nine.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Nine.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Nine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Nine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Nine.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nine.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Nine.Location = new System.Drawing.Point(454, 173);
             this.Nine.Name = "Nine";
             this.Nine.Size = new System.Drawing.Size(75, 50);
             this.Nine.TabIndex = 8;
@@ -144,8 +210,15 @@
             // 
             // Subtract
             // 
-            this.Subtract.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Subtract.Location = new System.Drawing.Point(470, 173);
+            this.Subtract.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Subtract.FlatAppearance.BorderSize = 0;
+            this.Subtract.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Subtract.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Subtract.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Subtract.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Subtract.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Subtract.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Subtract.Location = new System.Drawing.Point(552, 173);
             this.Subtract.Name = "Subtract";
             this.Subtract.Size = new System.Drawing.Size(75, 50);
             this.Subtract.TabIndex = 9;
@@ -155,8 +228,15 @@
             // 
             // Add
             // 
-            this.Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add.Location = new System.Drawing.Point(470, 229);
+            this.Add.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Add.FlatAppearance.BorderSize = 0;
+            this.Add.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Add.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Add.Location = new System.Drawing.Point(552, 229);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(75, 50);
             this.Add.TabIndex = 10;
@@ -166,8 +246,15 @@
             // 
             // Equals
             // 
-            this.Equals.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Equals.Location = new System.Drawing.Point(470, 285);
+            this.Equals.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Equals.FlatAppearance.BorderSize = 0;
+            this.Equals.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Equals.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Equals.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Equals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Equals.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Equals.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Equals.Location = new System.Drawing.Point(552, 285);
             this.Equals.Name = "Equals";
             this.Equals.Size = new System.Drawing.Size(75, 50);
             this.Equals.TabIndex = 11;
@@ -177,21 +264,29 @@
             // 
             // Output
             // 
-            this.Output.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Output.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Output.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(210)))), ((int)(((byte)(211)))));
+            this.Output.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Output.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Output.Location = new System.Drawing.Point(129, 126);
+            this.Output.Location = new System.Drawing.Point(0, 0);
             this.Output.Name = "Output";
+            this.Output.Padding = new System.Windows.Forms.Padding(0, 0, 25, 0);
             this.Output.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Output.Size = new System.Drawing.Size(416, 20);
+            this.Output.Size = new System.Drawing.Size(445, 123);
             this.Output.TabIndex = 12;
             this.Output.Text = "0";
             this.Output.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Zero
             // 
-            this.Zero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Zero.Location = new System.Drawing.Point(210, 341);
+            this.Zero.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Zero.FlatAppearance.BorderSize = 0;
+            this.Zero.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Zero.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Zero.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Zero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Zero.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Zero.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Zero.Location = new System.Drawing.Point(292, 341);
             this.Zero.Name = "Zero";
             this.Zero.Size = new System.Drawing.Size(237, 50);
             this.Zero.TabIndex = 13;
@@ -201,8 +296,15 @@
             // 
             // Decimal
             // 
-            this.Decimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Decimal.Location = new System.Drawing.Point(470, 341);
+            this.Decimal.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Decimal.FlatAppearance.BorderSize = 0;
+            this.Decimal.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Decimal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Decimal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Decimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Decimal.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Decimal.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Decimal.Location = new System.Drawing.Point(552, 341);
             this.Decimal.Name = "Decimal";
             this.Decimal.Size = new System.Drawing.Size(75, 50);
             this.Decimal.TabIndex = 14;
@@ -212,8 +314,15 @@
             // 
             // Multiply
             // 
-            this.Multiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Multiply.Location = new System.Drawing.Point(129, 173);
+            this.Multiply.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Multiply.FlatAppearance.BorderSize = 0;
+            this.Multiply.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Multiply.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Multiply.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Multiply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Multiply.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Multiply.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Multiply.Location = new System.Drawing.Point(206, 172);
             this.Multiply.Name = "Multiply";
             this.Multiply.Size = new System.Drawing.Size(75, 50);
             this.Multiply.TabIndex = 15;
@@ -223,8 +332,15 @@
             // 
             // Division
             // 
-            this.Division.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Division.Location = new System.Drawing.Point(129, 229);
+            this.Division.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Division.FlatAppearance.BorderSize = 0;
+            this.Division.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Division.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Division.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Division.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Division.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Division.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Division.Location = new System.Drawing.Point(206, 228);
             this.Division.Name = "Division";
             this.Division.Size = new System.Drawing.Size(75, 50);
             this.Division.TabIndex = 16;
@@ -234,8 +350,15 @@
             // 
             // Clear
             // 
-            this.Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clear.Location = new System.Drawing.Point(129, 285);
+            this.Clear.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Clear.FlatAppearance.BorderSize = 0;
+            this.Clear.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGray;
+            this.Clear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.Clear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Clear.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clear.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Clear.Location = new System.Drawing.Point(206, 284);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(75, 50);
             this.Clear.TabIndex = 17;
@@ -243,18 +366,35 @@
             this.Clear.UseVisualStyleBackColor = true;
             this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 461);
+            this.panel1.TabIndex = 18;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.Output);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(445, 123);
+            this.panel2.TabIndex = 19;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.ClientSize = new System.Drawing.Size(645, 461);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.Division);
             this.Controls.Add(this.Multiply);
             this.Controls.Add(this.Decimal);
             this.Controls.Add(this.Zero);
-            this.Controls.Add(this.Output);
             this.Controls.Add(this.Equals);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.Subtract);
@@ -267,8 +407,10 @@
             this.Controls.Add(this.Three);
             this.Controls.Add(this.Two);
             this.Controls.Add(this.One);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -293,6 +435,8 @@
         private System.Windows.Forms.Button Multiply;
         private System.Windows.Forms.Button Division;
         private System.Windows.Forms.Button Clear;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
