@@ -11,13 +11,6 @@ using System.Windows.Forms;
 namespace CalculatorAttempt {
     //ALL METHODS ARE PUBLIC FOR UNIT TESTING CURRENTLY!
 
-        /*
-         * Current Erros:
-         * Logic: if you have a two digit number I believe it still treats it as a single digit input.
-         *        StringBuilder issue with displaying the correct output for equations larger than one value.
-         *        
-         */
-
         //to stop infinitely adding logical operators could we simply see if the length of the operands stack has changed since the last addition?
 
     public partial class Form1 : Form {
@@ -25,7 +18,11 @@ namespace CalculatorAttempt {
         //Operators: The logical manipulations of data such as: +, -, *, /.
         public Stack<char> operatorsStack;
 
+        //Holds the values for the output label.
         private StringBuilder sb;
+
+        //Container to hold the number combinations when 1 and 2 are pressed to hold 12.
+        Queue<float> numContainer;
 
         //Operands: The actual data, such as: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0.
         public Stack<float> operandsStack;
@@ -36,9 +33,11 @@ namespace CalculatorAttempt {
         public Form1() {
             InitializeComponent();
             operatorsStack = new Stack<char>();
-            //has to be a float because otherwise we lose precision.
+
+            //has to be a float because otherwise we can't implement the decimal addition, subtraction, etc.
             operandsStack = new Stack<float>();
             sb = new StringBuilder();
+            numContainer = new Queue<float>();
         }
 
         /// <summary>
@@ -48,11 +47,34 @@ namespace CalculatorAttempt {
         public bool TokenChecker(Stack<float> Operand, Stack<char> Operator)
         {
             //TODO: Check to see if the next addition is valid.
-            if( Operand.Count > 0 && Operator.Count < Operand.Count )
+            if( numContainer.Count > 0 || Operator.Count < Operand.Count )
             {
                 return true;
             }
             return false;
+        }
+
+        private void numDequeuer()
+        {
+            float number = 0;
+            //If there is only one value, then we simply just dequeue the queue.
+            if (numContainer.Count == 1)
+            {
+                operandsStack.Push(numContainer.Dequeue());
+            } else
+            {
+                while (numContainer.Count > 0)
+                {
+                    //Dequeue the current container of numbers and "contain" it in an float.
+                    number += numContainer.Dequeue();
+                    if (numContainer.Count > 0)
+                    {
+                        number *= 10;
+                    }
+                }
+                //Move the operands stack push into here. Otherwise we are adding the number 0 to the stack...
+                operandsStack.Push(number);
+            }
         }
 
         public void EvaluateExpression(Stack<float> Operand, Stack<char> Operator)
@@ -70,20 +92,19 @@ namespace CalculatorAttempt {
                         result = num1 + num2;
                         break;
                     case '-':
-                        result = num1 - num2;
+                        result = num2 - num1;
                         break;
                     case '*':
                         result = num1 * num2;
                         break;
                     case '/':
-                        result = num1 / num2;
+                        result = num2 / num1;
                         break;
                     case '.':
                         Console.WriteLine("Currently not implemented...");
                         break;
                 }
                 operandsStack.Push(result);
-                Console.WriteLine(sb.Length); 
                 sb.Remove(0, sb.Length);
                 sb.Append(result.ToString());
                 Output.Text = sb.ToString();
@@ -96,72 +117,72 @@ namespace CalculatorAttempt {
         {
             //I want to call a method that checks that an operator is next to the number so we aren't adding 1 2 + unless of course.
             //the number is 12.
-            operandsStack.Push(1);
+            numContainer.Enqueue(1);
             sb.Append("1");
             Output.Text = sb.ToString();
         }
 
         public void Two_Click(object sender, EventArgs e)
         {
+            numContainer.Enqueue(2);
             sb.Append("2");
-            operandsStack.Push(2);
             Output.Text = sb.ToString();
         }
 
 
         public void Three_Click(object sender, EventArgs e)
         {
+            numContainer.Enqueue(3);
             sb.Append("3");
-            operandsStack.Push(3);
             Output.Text = sb.ToString();
         }
 
         public void Four_Click(object sender, EventArgs e)
         {
+            numContainer.Enqueue(4);
             sb.Append("4");
-            operandsStack.Push(4);
             Output.Text = sb.ToString();
         }
 
         public void Five_Click(object sender, EventArgs e)
         {
+            numContainer.Enqueue(5);
             sb.Append("5");
-            operandsStack.Push(5);
             Output.Text = sb.ToString();
         }
 
         public void Six_Click(object sender, EventArgs e)
         {
+            numContainer.Enqueue(6);
             sb.Append("6");
-            operandsStack.Push(6);
             Output.Text = sb.ToString();
         }
 
         public void Seven_Click(object sender, EventArgs e)
         {
+            numContainer.Enqueue(7);
             sb.Append("7");
-            operandsStack.Push(7);
             Output.Text = sb.ToString();
         }
 
         public void Eight_Click(object sender, EventArgs e)
         {
+            numContainer.Enqueue(8);
             sb.Append("8");
-            operandsStack.Push(8);
             Output.Text = sb.ToString();
         }
 
         public void Nine_Click(object sender, EventArgs e)
         {
+            numContainer.Enqueue(9);
             sb.Append("9");
-            operandsStack.Push(9);
             Output.Text = sb.ToString();
         }
 
         public void Zero_Click(object sender, EventArgs e)
         {
+            numContainer.Enqueue(0);
             sb.Append("0");
-            operandsStack.Push(0);
             Output.Text = sb.ToString();
         }
 
@@ -170,6 +191,10 @@ namespace CalculatorAttempt {
             //Make sure that if the - button is pressed that there is even anything to subtract in the first place.
             if(TokenChecker(operandsStack, operatorsStack))
             {
+                if(numContainer.Count > 0)
+                {
+                    numDequeuer();
+                }
                 operatorsStack.Push('-');
                 sb.Append(" - ");
                 Output.Text = sb.ToString();
@@ -180,17 +205,17 @@ namespace CalculatorAttempt {
         {
             if (TokenChecker(operandsStack, operatorsStack))
             {
+                if (numContainer.Count > 0)
+                {
+                    numDequeuer();
+                }
                 operatorsStack.Push('+');
                 sb.Append(" + ");
                 Output.Text = sb.ToString();
             }
         }
 
-        public void Equals_Click(object sender, EventArgs e)
-        {
-            EvaluateExpression(operandsStack, operatorsStack);
-        }
-
+        //NOT IMPLEMENTED YET!
         public void Decimal_Click(object sender, EventArgs e)
         {
             TokenChecker(operandsStack, operatorsStack);
@@ -201,6 +226,10 @@ namespace CalculatorAttempt {
         {
             if (TokenChecker(operandsStack, operatorsStack))
             {
+                if (numContainer.Count > 0)
+                {
+                    numDequeuer();
+                }
                 operatorsStack.Push('*');
                 sb.Append(" * ");
                 Output.Text = sb.ToString();
@@ -211,10 +240,20 @@ namespace CalculatorAttempt {
         {
             if (TokenChecker(operandsStack, operatorsStack))
             {
+                if (numContainer.Count > 0)
+                {
+                    numDequeuer();
+                }
                 operatorsStack.Push('/');
                 sb.Append(" / ");
                 Output.Text = sb.ToString();
             }
+        }
+
+        public void Equals_Click(object sender, EventArgs e)
+        {
+            numDequeuer();
+            EvaluateExpression(operandsStack, operatorsStack);
         }
     }
 }
