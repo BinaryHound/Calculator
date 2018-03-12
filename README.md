@@ -12,6 +12,11 @@ UPDATE 0.0.2:
  - Fixed subtraction error.<br>
  - Fixed unnecessary stack push call.<br>
  
+Upcoming Changes 0.0.3:
+ - Look for single delegate to clean up some of the programs clutter.
+ - Look for new functions like sqrt(), log(), sin(), tan(), and cos().
+ - and many more!
+ 
 <br>
 Errors:
 Logic: Multi-valued inputs are being seen as a single input value. Instead of 12 being a single value it is currently 1, 2. (urgent)
