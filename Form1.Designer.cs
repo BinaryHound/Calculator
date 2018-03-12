@@ -23,6 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.One = new System.Windows.Forms.Button();
             this.Two = new System.Windows.Forms.Button();
             this.Three = new System.Windows.Forms.Button();
@@ -41,9 +42,17 @@
             this.Multiply = new System.Windows.Forms.Button();
             this.Division = new System.Windows.Forms.Button();
             this.Clear = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel2.SuspendLayout();
+            this.panelControl = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.buttonNotepad = new System.Windows.Forms.Button();
+            this.buttonToDo = new System.Windows.Forms.Button();
+            this.buttonCalculator = new System.Windows.Forms.Button();
+            this.buttonCalendar = new System.Windows.Forms.Button();
+            this.buttonHome = new System.Windows.Forms.Button();
+            this.panelTop = new System.Windows.Forms.Panel();
+            this.panelLeft = new System.Windows.Forms.Panel();
+            this.panelControl.SuspendLayout();
+            this.panelTop.SuspendLayout();
             this.SuspendLayout();
             // 
             // One
@@ -264,14 +273,14 @@
             // 
             // Output
             // 
-            this.Output.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(210)))), ((int)(((byte)(211)))));
+            this.Output.BackColor = System.Drawing.Color.White;
             this.Output.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Output.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Output.Location = new System.Drawing.Point(0, 0);
+            this.Output.Location = new System.Drawing.Point(16, 0);
             this.Output.Name = "Output";
             this.Output.Padding = new System.Windows.Forms.Padding(0, 0, 25, 0);
             this.Output.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Output.Size = new System.Drawing.Size(445, 123);
+            this.Output.Size = new System.Drawing.Size(424, 166);
             this.Output.TabIndex = 12;
             this.Output.Text = "0";
             this.Output.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -366,30 +375,137 @@
             this.Clear.UseVisualStyleBackColor = true;
             this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
-            // panel1
+            // panelControl
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 461);
-            this.panel1.TabIndex = 18;
+            this.panelControl.Controls.Add(this.panel3);
+            this.panelControl.Controls.Add(this.buttonNotepad);
+            this.panelControl.Controls.Add(this.buttonToDo);
+            this.panelControl.Controls.Add(this.buttonCalculator);
+            this.panelControl.Controls.Add(this.buttonCalendar);
+            this.panelControl.Controls.Add(this.buttonHome);
+            this.panelControl.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelControl.Location = new System.Drawing.Point(0, 0);
+            this.panelControl.Name = "panelControl";
+            this.panelControl.Size = new System.Drawing.Size(200, 461);
+            this.panelControl.TabIndex = 18;
             // 
-            // panel2
+            // panel3
             // 
-            this.panel2.Controls.Add(this.Output);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(200, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(445, 123);
-            this.panel2.TabIndex = 19;
+            this.panel3.Location = new System.Drawing.Point(200, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(5, 80);
+            this.panel3.TabIndex = 20;
+            // 
+            // buttonNotepad
+            // 
+            this.buttonNotepad.FlatAppearance.BorderSize = 0;
+            this.buttonNotepad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNotepad.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNotepad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(161)))), ((int)(((byte)(206)))));
+            this.buttonNotepad.Image = ((System.Drawing.Image)(resources.GetObject("buttonNotepad.Image")));
+            this.buttonNotepad.Location = new System.Drawing.Point(0, 344);
+            this.buttonNotepad.Name = "buttonNotepad";
+            this.buttonNotepad.Size = new System.Drawing.Size(200, 80);
+            this.buttonNotepad.TabIndex = 4;
+            this.buttonNotepad.Text = "Notepad?";
+            this.buttonNotepad.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonNotepad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonNotepad.UseVisualStyleBackColor = true;
+            this.buttonNotepad.Click += new System.EventHandler(this.buttonNotepad_Click);
+            // 
+            // buttonToDo
+            // 
+            this.buttonToDo.FlatAppearance.BorderSize = 0;
+            this.buttonToDo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonToDo.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonToDo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(161)))), ((int)(((byte)(206)))));
+            this.buttonToDo.Image = ((System.Drawing.Image)(resources.GetObject("buttonToDo.Image")));
+            this.buttonToDo.Location = new System.Drawing.Point(0, 258);
+            this.buttonToDo.Name = "buttonToDo";
+            this.buttonToDo.Size = new System.Drawing.Size(200, 80);
+            this.buttonToDo.TabIndex = 3;
+            this.buttonToDo.Text = "To Do";
+            this.buttonToDo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonToDo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonToDo.UseVisualStyleBackColor = true;
+            this.buttonToDo.Click += new System.EventHandler(this.buttonToDo_Click);
+            // 
+            // buttonCalculator
+            // 
+            this.buttonCalculator.FlatAppearance.BorderSize = 0;
+            this.buttonCalculator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCalculator.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCalculator.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(161)))), ((int)(((byte)(206)))));
+            this.buttonCalculator.Image = ((System.Drawing.Image)(resources.GetObject("buttonCalculator.Image")));
+            this.buttonCalculator.Location = new System.Drawing.Point(0, 172);
+            this.buttonCalculator.Name = "buttonCalculator";
+            this.buttonCalculator.Size = new System.Drawing.Size(200, 80);
+            this.buttonCalculator.TabIndex = 2;
+            this.buttonCalculator.Text = "Calculator";
+            this.buttonCalculator.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonCalculator.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonCalculator.UseVisualStyleBackColor = true;
+            this.buttonCalculator.Click += new System.EventHandler(this.buttonCalculator_Click);
+            // 
+            // buttonCalendar
+            // 
+            this.buttonCalendar.FlatAppearance.BorderSize = 0;
+            this.buttonCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCalendar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCalendar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(161)))), ((int)(((byte)(206)))));
+            this.buttonCalendar.Image = ((System.Drawing.Image)(resources.GetObject("buttonCalendar.Image")));
+            this.buttonCalendar.Location = new System.Drawing.Point(0, 86);
+            this.buttonCalendar.Name = "buttonCalendar";
+            this.buttonCalendar.Size = new System.Drawing.Size(200, 80);
+            this.buttonCalendar.TabIndex = 1;
+            this.buttonCalendar.Text = "Calendar";
+            this.buttonCalendar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonCalendar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonCalendar.UseVisualStyleBackColor = true;
+            this.buttonCalendar.Click += new System.EventHandler(this.buttonCalendar_Click);
+            // 
+            // buttonHome
+            // 
+            this.buttonHome.FlatAppearance.BorderSize = 0;
+            this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHome.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(161)))), ((int)(((byte)(206)))));
+            this.buttonHome.Image = ((System.Drawing.Image)(resources.GetObject("buttonHome.Image")));
+            this.buttonHome.Location = new System.Drawing.Point(0, 0);
+            this.buttonHome.Name = "buttonHome";
+            this.buttonHome.Size = new System.Drawing.Size(200, 80);
+            this.buttonHome.TabIndex = 0;
+            this.buttonHome.Text = "Home";
+            this.buttonHome.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonHome.UseVisualStyleBackColor = true;
+            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
+            // 
+            // panelTop
+            // 
+            this.panelTop.Controls.Add(this.Output);
+            this.panelTop.Location = new System.Drawing.Point(206, 0);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(440, 166);
+            this.panelTop.TabIndex = 19;
+            this.panelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // panelLeft
+            // 
+            this.panelLeft.BackColor = System.Drawing.Color.LightCoral;
+            this.panelLeft.Location = new System.Drawing.Point(200, 0);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(5, 80);
+            this.panelLeft.TabIndex = 13;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(645, 461);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelLeft);
+            this.Controls.Add(this.panelTop);
+            this.Controls.Add(this.panelControl);
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.Division);
             this.Controls.Add(this.Multiply);
@@ -410,7 +526,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.panel2.ResumeLayout(false);
+            this.panelControl.ResumeLayout(false);
+            this.panelTop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -435,8 +552,15 @@
         private System.Windows.Forms.Button Multiply;
         private System.Windows.Forms.Button Division;
         private System.Windows.Forms.Button Clear;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelControl;
+        private System.Windows.Forms.Panel panelTop;
+        private System.Windows.Forms.Button buttonCalendar;
+        private System.Windows.Forms.Button buttonHome;
+        private System.Windows.Forms.Button buttonCalculator;
+        private System.Windows.Forms.Button buttonNotepad;
+        private System.Windows.Forms.Button buttonToDo;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelLeft;
     }
 }
 

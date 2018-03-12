@@ -263,5 +263,39 @@ namespace CalculatorAttempt {
             EvaluateExpression(operandsStack, operatorsStack);
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            panelLeft.Height = buttonHome.Height;
+            panelLeft.Top = buttonHome.Top;
+        }
+
+        private void buttonCalendar_Click(object sender, EventArgs e)
+        {
+            panelLeft.Height = buttonCalendar.Height;
+            panelLeft.Top = buttonCalendar.Top;
+        }
+
+        private void buttonCalculator_Click(object sender, EventArgs e)
+        {
+            panelLeft.Height = buttonCalculator.Height;
+            panelLeft.Top = buttonCalculator.Top;
+        }
+
+        private void buttonToDo_Click(object sender, EventArgs e)
+        {
+            panelLeft.Height = buttonToDo.Height;
+            panelLeft.Top = buttonToDo.Top;
+        }
+
+        private void buttonNotepad_Click(object sender, EventArgs e)
+        {
+            panelLeft.Height = buttonNotepad.Height;
+            panelLeft.Top = buttonNotepad.Top;
+        }
     }
 }
