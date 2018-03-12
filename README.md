@@ -17,6 +17,13 @@ Upcoming Changes 0.0.3:
  - Look for new functions like sqrt(), log(), sin(), tan(), and cos().
  - and many more!
  
+ ![calc-home](https://user-images.githubusercontent.com/20911133/37311317-68cd38b6-260c-11e8-946c-cfaf60f65f9e.PNG)
+ 
+ 
+![calc-input](https://user-images.githubusercontent.com/20911133/37311364-91ff7078-260c-11e8-90c4-da9aa4043bbf.PNG)
+
+![calc-equals](https://user-images.githubusercontent.com/20911133/37311374-999f25b2-260c-11e8-8e6b-aed017ce2fbf.PNG)
+ 
 <br>
 Errors:
 Logic: Multi-valued inputs are being seen as a single input value. Instead of 12 being a single value it is currently 1, 2. (urgent)
